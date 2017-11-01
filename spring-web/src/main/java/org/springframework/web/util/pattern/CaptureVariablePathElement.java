@@ -82,7 +82,7 @@ class CaptureVariablePathElement extends PathElement {
 		}
 
 		if (this.constraintPattern != null) {
-			// TODO possible optimization - only regex match if rest of pattern matches?
+			// TODO possible optimization - only regex match if rest of pattern matches? id:98 gh:99
 			// Benefit likely to vary pattern to pattern
 			Matcher matcher = constraintPattern.matcher(candidateCapture);
 			if (matcher.groupCount() != 0) {

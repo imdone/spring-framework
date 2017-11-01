@@ -79,7 +79,7 @@ public class HandlerMethodAnnotationDetectionTests {
 			{ ParameterizedSubclassOverridesDefaultMappings.class, true }, // CGLib proxy
 			{ ParameterizedSubclassOverridesDefaultMappings.class, false },
 
-			// TODO [SPR-9517] Enable ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass test cases
+			// TODO [SPR-9517] Enable ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass test cases id:103 gh:106
 			// { ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass.class, true }, // CGLib proxy
 			// { ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass.class, false },
 
@@ -411,7 +411,7 @@ public class HandlerMethodAnnotationDetectionTests {
 
 		@Override
 		@RequestMapping(value = "/path1/path2", method = RequestMethod.POST)
-		// NOTE: @ModelAttribute will NOT be found on the abstract superclass if
+		// NOTE: @ModelAttribute will NOT be found on the abstract superclass if id:67 gh:68
 		// @RequestMapping is declared locally. Thus, we have to redeclare
 		// @ModelAttribute locally as well.
 		@ModelAttribute("attr2")

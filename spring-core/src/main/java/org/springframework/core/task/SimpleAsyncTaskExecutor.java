@@ -137,7 +137,7 @@ public class SimpleAsyncTaskExecutor extends CustomizableThreadCreator
 	 * -1 indicates no concurrency limit at all.
 	 * <p>In principle, this limit can be changed at runtime,
 	 * although it is generally designed as a config time setting.
-	 * NOTE: Do not switch between -1 and any concrete limit at runtime,
+	 * NOTE: Do not switch between -1 and any concrete limit at runtime, id:23 gh:24
 	 * as this will lead to inconsistent concurrency counts: A limit
 	 * of -1 effectively turns off concurrency counting completely.
 	 * @see #UNBOUNDED_CONCURRENCY

@@ -70,7 +70,7 @@ import org.springframework.util.StringUtils;
  */
 public abstract class TransactionAspectSupport implements BeanFactoryAware, InitializingBean {
 
-	// NOTE: This class must not implement Serializable because it serves as base
+	// NOTE: This class must not implement Serializable because it serves as base id:97 gh:98
 	// class for AspectJ aspects (which are not allowed to implement Serializable)!
 
 

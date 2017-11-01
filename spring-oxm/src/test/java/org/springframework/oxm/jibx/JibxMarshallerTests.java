@@ -29,7 +29,7 @@ import static org.junit.Assert.*;
 import static org.xmlunit.matchers.CompareMatcher.*;
 
 /**
- * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does not occur by
+ * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does not occur by id:107 gh:109
  * default. The Gradle build should succeed, however.
  *
  * @author Arjen Poutsma

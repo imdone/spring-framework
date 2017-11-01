@@ -50,8 +50,8 @@ import org.springframework.util.ReflectionUtils;
  * @author Stephane Nicoll
  * @since 3.0
  */
-// TODO support multidimensional arrays
-// TODO support correct syntax for multidimensional [][][] and not [,,,]
+// TODO support multidimensional arrays id:12 gh:13
+// TODO support correct syntax for multidimensional [][][] and not [,,,] id:25 gh:26
 public class Indexer extends SpelNodeImpl {
 
 	private enum IndexedType {ARRAY, LIST, MAP, STRING, OBJECT}
@@ -177,7 +177,7 @@ public class Indexer extends SpelNodeImpl {
 		}
 
 		// Try and treat the index value as a property of the context object
-		// TODO could call the conversion service to convert the value to a String
+		// TODO could call the conversion service to convert the value to a String id:37 gh:38
 		TypeDescriptor valueType = indexValue.getTypeDescriptor();
 		if (valueType != null && String.class == valueType.getType()) {
 			this.indexedType = IndexedType.OBJECT;

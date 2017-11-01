@@ -51,7 +51,7 @@ import static org.mockito.BDDMockito.*;
  */
 public class SqlQueryTests  {
 
-	//FIXME inline?
+	//FIXME inline? id:106 gh:108
 	private static final String SELECT_ID =
 			"select id from custmr";
 	private static final String SELECT_ID_WHERE =

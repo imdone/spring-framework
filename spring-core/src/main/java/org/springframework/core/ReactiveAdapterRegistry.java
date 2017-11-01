@@ -247,7 +247,7 @@ public class ReactiveAdapterRegistry {
 
 	private static class ReactorJdkFlowAdapterRegistrar {
 
-		// TODO: remove reflection when build requires JDK 9+
+		// TODO: remove reflection when build requires JDK 9+ id:10 gh:11
 		void registerAdapter(ReactiveAdapterRegistry registry) throws Exception {
 			Class<?> type = ClassUtils.forName("java.util.concurrent.Flow.Publisher", getClass().getClassLoader());
 			Method toFluxMethod = getMethod("flowPublisherToFlux", type);

@@ -40,7 +40,7 @@ import static org.junit.Assert.*;
 /**
  * Test the examples specified in the documentation.
  *
- * NOTE: any outgoing changes from this file upon synchronizing with the repo may indicate that
+ * NOTE: any outgoing changes from this file upon synchronizing with the repo may indicate that id:57 gh:58
  * you need to update the documentation too !
  *
  * @author Andy Clement

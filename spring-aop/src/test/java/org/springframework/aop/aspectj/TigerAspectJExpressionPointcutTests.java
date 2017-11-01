@@ -38,7 +38,7 @@ import static org.junit.Assert.*;
  */
 public class TigerAspectJExpressionPointcutTests {
 
-	// TODO factor into static in AspectJExpressionPointcut
+	// TODO factor into static in AspectJExpressionPointcut id:4 gh:5
 	private Method getAge;
 
 	private Map<String,Method> methodsOnHasGeneric = new HashMap<>();
@@ -60,7 +60,7 @@ public class TigerAspectJExpressionPointcutTests {
 		AspectJExpressionPointcut ajexp = new AspectJExpressionPointcut();
 		ajexp.setExpression(expression);
 
-		// TODO this will currently map, would be nice for optimization
+		// TODO this will currently map, would be nice for optimization id:14 gh:16
 		//assertTrue(ajexp.matches(HasGeneric.class));
 		//assertFalse(ajexp.matches(TestBean.class));
 
@@ -87,7 +87,7 @@ public class TigerAspectJExpressionPointcutTests {
 		AspectJExpressionPointcut jdbcVarArgs = new AspectJExpressionPointcut();
 		jdbcVarArgs.setExpression(expression);
 
-		// TODO: the expression above no longer matches Object[]
+		// TODO: the expression above no longer matches Object[] id:17 gh:18
 		// assertFalse(jdbcVarArgs.matches(
 		//	JdbcTemplate.class.getMethod("queryForInt", String.class, Object[].class),
 		//	JdbcTemplate.class));

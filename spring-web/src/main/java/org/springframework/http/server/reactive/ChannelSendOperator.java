@@ -150,7 +150,7 @@ public class ChannelSendOperator<T> extends Mono<Void> implements Scannable {
 				requiredWriteSubscriber().onNext(item);
 				return;
 			}
-			//FIXME revisit in case of reentrant sync deadlock
+			//FIXME revisit in case of reentrant sync deadlock id:110 gh:111
 			synchronized (this) {
 				if (this.readyToWrite) {
 					requiredWriteSubscriber().onNext(item);

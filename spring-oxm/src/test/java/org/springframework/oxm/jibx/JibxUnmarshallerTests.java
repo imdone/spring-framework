@@ -28,7 +28,7 @@ import org.springframework.oxm.AbstractUnmarshallerTests;
 import static org.junit.Assert.*;
 
 /**
- * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does
+ * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does id:45 gh:46
  * not occur by default. The Gradle build should succeed, however.
  *
  * @author Arjen Poutsma

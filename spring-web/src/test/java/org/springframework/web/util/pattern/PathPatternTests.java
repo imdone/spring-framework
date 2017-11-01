@@ -865,7 +865,7 @@ public class PathPatternTests {
 		assertEquals("/hotel.html", pathMatcher.combine("/*.html", "/hotel.html"));
 		assertEquals("/hotel.html", pathMatcher.combine("/*.html", "/hotel"));
 		assertEquals("/hotel.html", pathMatcher.combine("/*.html", "/hotel.*"));
-		// TODO this seems rather bogus, should we eagerly show an error?
+		// TODO this seems rather bogus, should we eagerly show an error? id:64 gh:65
 		assertEquals("/d/e/f/hotel.html", pathMatcher.combine("/a/b/c/*.html", "/d/e/f/hotel.*"));
 		assertEquals("/*.html", pathMatcher.combine("/**", "/*.html"));
 		assertEquals("/*.html", pathMatcher.combine("/*", "/*.html"));
@@ -926,7 +926,7 @@ public class PathPatternTests {
 		assertEquals(-1, comparator.compare(parse("/hotels/*"), parse("/hotels/*/**")));
 		assertEquals(1, comparator.compare(parse("/hotels/*/**"), parse("/hotels/*")));
 
-// TODO: shouldn't the wildcard lower the score?
+// TODO: shouldn't the wildcard lower the score? id:118 gh:119
 //		assertEquals(-1,
 //				comparator.compare(parse("/hotels/new"), parse("/hotels/new.*")));
 

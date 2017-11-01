@@ -139,7 +139,7 @@ class UndertowServerHttpRequest extends AbstractServerHttpRequest {
 
 		@Override
 		protected void checkOnDataAvailable() {
-			// TODO: The onDataAvailable() call below can cause a StackOverflowError
+			// TODO: The onDataAvailable() call below can cause a StackOverflowError id:48 gh:49
 			// since this method is being called from onDataAvailable() itself.
 			onDataAvailable();
 		}

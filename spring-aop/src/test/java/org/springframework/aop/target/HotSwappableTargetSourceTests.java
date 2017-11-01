@@ -93,7 +93,7 @@ public class HotSwappableTargetSourceTests {
 		Object old = swapper.swap(target2);
 		assertEquals("Correct old target was returned", target1, old);
 
-		// TODO should be able to make this assertion: need to fix target handling
+		// TODO should be able to make this assertion: need to fix target handling id:15 gh:14
 		// in AdvisedSupport
 		//assertEquals(target2, ((Advised) proxied).getTarget());
 
@@ -135,7 +135,7 @@ public class HotSwappableTargetSourceTests {
 		assertTrue(ex.getMessage().indexOf("null") != -1);
 	}
 
-	// TODO test reject swap to wrong interface or class?
+	// TODO test reject swap to wrong interface or class? id:18 gh:19
 	// how to decide what's valid?
 
 

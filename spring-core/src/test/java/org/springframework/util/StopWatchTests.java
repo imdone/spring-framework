@@ -50,7 +50,7 @@ public class StopWatchTests {
 		assertEquals(name1, sw.currentTaskName());
 		sw.stop();
 
-		// TODO are timings off in JUnit? Why do these assertions sometimes fail
+		// TODO are timings off in JUnit? Why do these assertions sometimes fail id:11 gh:12
 		// under both Ant and Eclipse?
 
 		// long fudgeFactor = 5L;
@@ -98,7 +98,7 @@ public class StopWatchTests {
 		assertTrue(sw.isRunning());
 		sw.stop();
 
-		// TODO are timings off in JUnit? Why do these assertions sometimes fail
+		// TODO are timings off in JUnit? Why do these assertions sometimes fail id:24 gh:25
 		// under both Ant and Eclipse?
 
 		// long fudgeFactor = 5L;

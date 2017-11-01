@@ -135,7 +135,7 @@ public class SetValueTests extends AbstractExpressionTests {
 		setValueExpectError("arrayContainer.ints[1]", "wibble");
 		setValueExpectError("arrayContainer.floats[1]", "dribble");
 		setValueExpectError("arrayContainer.booleans[1]", "nein");
-		// TODO -- this fails with NPE due to ArrayToObject converter - discuss with Andy
+		// TODO -- this fails with NPE due to ArrayToObject converter - discuss with Andy id:56 gh:57
 		//setValueExpectError("arrayContainer.doubles[1]", new ArrayList<String>());
 		//setValueExpectError("arrayContainer.shorts[1]", new ArrayList<String>());
 		//setValueExpectError("arrayContainer.longs[1]", new ArrayList<String>());
@@ -155,7 +155,7 @@ public class SetValueTests extends AbstractExpressionTests {
 
 	@Test
 	public void testSetGenericListElementValueTypeCoersion() {
-		// TODO currently failing since setValue does a getValue and "Wien" string != PlaceOfBirth - check with andy
+		// TODO currently failing since setValue does a getValue and "Wien" string != PlaceOfBirth - check with andy id:89 gh:90
 		setValue("placesLivedList[0]", "Wien");
 	}
 

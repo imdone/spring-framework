@@ -750,13 +750,13 @@ public abstract class AbstractAopProxyTests {
 		ProxyFactory pc = new ProxyFactory(target);
 		pc.addAdvisor(new DefaultIntroductionAdvisor(new DummyIntroductionAdviceImpl(), Comparable.class));
 		try {
-			// TODO May fail on either call: may want to tighten up definition
+			// TODO May fail on either call: may want to tighten up definition id:7 gh:8
 			ITestBean proxied = (ITestBean) createProxy(pc);
 			proxied.getName();
 			fail("Bogus introduction");
 		}
 		catch (Exception ex) {
-			// TODO used to catch UnknownAdviceTypeException, but
+			// TODO used to catch UnknownAdviceTypeException, but id:20 gh:21
 			// with CGLIB some errors are in proxy creation and are wrapped
 			// in aspect exception. Error message is still fine.
 			//assertTrue(ex.getMessage().indexOf("ntroduction") > -1);
@@ -1863,7 +1863,7 @@ public abstract class AbstractAopProxyTests {
 
 		@Override
 		protected void checkAdvised(Advised advised) {
-			// TODO replace this check: no longer possible
+			// TODO replace this check: no longer possible id:32 gh:33
 			//assertEquals(advised.getTarget(), this);
 		}
 	}

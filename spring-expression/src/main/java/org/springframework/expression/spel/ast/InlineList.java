@@ -39,7 +39,7 @@ public class InlineList extends SpelNodeImpl {
 
 	// If the list is purely literals, it is a constant value and can be computed and cached
 	@Nullable
-	private TypedValue constant;  // TODO must be immutable list
+	private TypedValue constant;  // TODO must be immutable list id:86 gh:87
 
 
 	public InlineList(int pos, SpelNodeImpl... args) {

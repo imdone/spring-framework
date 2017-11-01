@@ -66,7 +66,7 @@ public class ReactorNettyTcpConnection<P> implements TcpConnection<P> {
 	@Override
 	@SuppressWarnings("deprecation")
 	public void onReadInactivity(Runnable runnable, long inactivityDuration) {
-		// TODO: workaround for https://github.com/reactor/reactor-netty/issues/22
+		// TODO: workaround for https://github.com/reactor/reactor-netty/issues/22 id:44 gh:45
 		ChannelPipeline pipeline = this.inbound.context().channel().pipeline();
 		String name = NettyPipeline.OnChannelReadIdle;
 		if (pipeline.context(name) != null) {

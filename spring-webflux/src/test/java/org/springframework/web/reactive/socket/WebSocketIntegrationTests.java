@@ -185,7 +185,7 @@ public class WebSocketIntegrationTests extends AbstractWebSocketIntegrationTests
 	}
 
 
-	// TODO: workaround for suspected RxNetty WebSocket client issue
+	// TODO: workaround for suspected RxNetty WebSocket client issue id:115 gh:116
 	// https://github.com/ReactiveX/RxNetty/issues/560
 
 	private static Mono<Void> doSend(WebSocketSession session, Publisher<WebSocketMessage> output) {

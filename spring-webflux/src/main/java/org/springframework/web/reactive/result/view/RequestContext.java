@@ -96,7 +96,7 @@ public class RequestContext {
 				((TimeZoneAwareLocaleContext) localeContext).getTimeZone() : null);
 		this.timeZone = (timeZone != null ? timeZone : TimeZone.getDefault());
 
-		this.defaultHtmlEscape = null;  // TODO
+		this.defaultHtmlEscape = null;  // TODO id:101 gh:104
 		this.dataValueProcessor = dataValueProcessor;
 	}
 

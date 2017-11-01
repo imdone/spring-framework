@@ -366,7 +366,7 @@ public class StompBrokerRelayMessageHandlerIntegrationTests {
 			return builder;
 		}
 
-		// TODO Determine why connectWithError() is unused.
+		// TODO Determine why connectWithError() is unused. id:30 gh:31
 		@SuppressWarnings("unused")
 		public static MessageExchangeBuilder connectWithError(String sessionId) {
 			StompHeaderAccessor headers = StompHeaderAccessor.create(StompCommand.CONNECT);
