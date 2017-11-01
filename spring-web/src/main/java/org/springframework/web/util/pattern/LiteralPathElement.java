@@ -79,7 +79,7 @@ class LiteralPathElement extends PathElement {
 		}
 		else {
 			for (int i = 0; i < len; i++) {
-				// TODO revisit performance if doing a lot of case insensitive matching
+				// TODO revisit performance if doing a lot of case insensitive matching id:62 gh:63
 				if (Character.toLowerCase(data[i]) != this.text[i]) {
 					return false;
 				}

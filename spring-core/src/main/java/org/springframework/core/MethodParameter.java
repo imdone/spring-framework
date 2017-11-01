@@ -438,7 +438,7 @@ public class MethodParameter {
 					Integer index = getTypeIndexForLevel(i);
 					type = args[index != null ? index : args.length - 1];
 				}
-				// TODO: Object.class if unresolvable
+				// TODO: Object.class if unresolvable id:71 gh:72
 			}
 			if (type instanceof Class) {
 				return (Class<?>) type;

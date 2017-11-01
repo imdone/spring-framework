@@ -45,7 +45,7 @@ public class ErrorHandlerIntegrationTests extends AbstractHttpHandlerIntegration
 
 	@Test
 	public void responseBodyError() throws Exception {
-		// TODO: fix Reactor
+		// TODO: fix Reactor id:63 gh:64
 		assumeFalse(server instanceof ReactorHttpServer);
 
 		RestTemplate restTemplate = new RestTemplate();
@@ -59,7 +59,7 @@ public class ErrorHandlerIntegrationTests extends AbstractHttpHandlerIntegration
 
 	@Test
 	public void handlingError() throws Exception {
-		// TODO: fix Reactor
+		// TODO: fix Reactor id:117 gh:118
 		assumeFalse(server instanceof ReactorHttpServer);
 
 		RestTemplate restTemplate = new RestTemplate();

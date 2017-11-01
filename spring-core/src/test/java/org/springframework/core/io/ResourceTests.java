@@ -185,7 +185,7 @@ public class ResourceTests {
 		assertEquals(new UrlResource("file:dir/subdir"), relative);
 	}
 
-	@Ignore @Test // this test is quite slow. TODO: re-enable with JUnit categories
+	@Ignore @Test // this test is quite slow. TODO: re-enable with JUnit categories id:84 gh:85
 	public void testNonFileResourceExists() throws Exception {
 		Resource resource = new UrlResource("http://www.springframework.org");
 		assertTrue(resource.exists());

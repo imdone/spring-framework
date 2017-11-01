@@ -64,7 +64,7 @@ public class RxNettyRequestUpgradeStrategy implements RequestUpgradeStrategy {
 			handshaker = handshaker.subprotocol(subProtocol);
 		}
 		else {
-			// TODO: https://github.com/reactor/reactor-netty/issues/20
+			// TODO: https://github.com/reactor/reactor-netty/issues/20 id:53 gh:54
 			handshaker = handshaker.subprotocol();
 		}
 

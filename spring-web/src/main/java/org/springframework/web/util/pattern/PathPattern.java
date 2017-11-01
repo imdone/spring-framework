@@ -254,9 +254,9 @@ public class PathPattern implements Comparable<PathPattern> {
 	 */
 	public PathContainer extractPathWithinPattern(PathContainer path) {
 
-		// TODO: implement extractPathWithinPattern for PathContainer
+		// TODO: implement extractPathWithinPattern for PathContainer id:95 gh:96
 
-		// TODO: align behavior with matchStartOfPath with regards to this:
+		// TODO: align behavior with matchStartOfPath with regards to this: id:111 gh:112
 		// As per the contract on {@link PathMatcher}, this method will trim leading/trailing
 		// separators. It will also remove duplicate separators in the returned path.
 

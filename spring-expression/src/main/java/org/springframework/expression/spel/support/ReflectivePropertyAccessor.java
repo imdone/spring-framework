@@ -151,7 +151,7 @@ public class ReflectivePropertyAccessor implements PropertyAccessor {
 			if (method == null) {
 				method = findGetterForProperty(name, type, target);
 				if (method != null) {
-					// TODO remove the duplication here between canRead and read
+					// TODO remove the duplication here between canRead and read id:104 gh:107
 					// Treat it like a property...
 					// The readerCache will only contain gettable properties (let's not worry about setters for now).
 					Property property = new Property(type, method, null);

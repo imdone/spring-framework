@@ -259,7 +259,7 @@ public abstract class AbstractBeanFactoryTests {
 		getBeanFactory().getBean("&rod");
 	}
 
-	// TODO: refactor in AbstractBeanFactory (tests for AbstractBeanFactory)
+	// TODO: refactor in AbstractBeanFactory (tests for AbstractBeanFactory) id:31 gh:32
 	// and rename this class
 	@Test
 	public void aliasing() {

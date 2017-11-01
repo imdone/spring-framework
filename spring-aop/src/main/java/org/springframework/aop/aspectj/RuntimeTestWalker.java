@@ -252,7 +252,7 @@ class RuntimeTestWalker {
 			super(thisClass, true, THIS_VAR);
 		}
 
-		// TODO: Optimization: Process only if this() specifies a type and not an identifier.
+		// TODO: Optimization: Process only if this() specifies a type and not an identifier. id:13 gh:15
 		public boolean thisInstanceOfMatches(Test test) {
 			return instanceOfMatches(test);
 		}

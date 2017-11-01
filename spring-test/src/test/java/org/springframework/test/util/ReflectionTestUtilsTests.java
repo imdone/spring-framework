@@ -321,7 +321,7 @@ public class ReflectionTestUtilsTests {
 
 	@Test
 	public void invokeMethodWithAutoboxingAndUnboxing() {
-		// IntelliJ IDEA 11 won't accept int assignment here
+		// IntelliJ IDEA 11 won't accept int assignment here id:93 gh:94
 		Integer difference = invokeMethod(component, "subtract", 5, 2);
 		assertEquals("subtract(5, 2)", 3, difference.intValue());
 	}
@@ -329,14 +329,14 @@ public class ReflectionTestUtilsTests {
 	@Test
 	@Ignore("[SPR-8644] findMethod() does not currently support var-args")
 	public void invokeMethodWithPrimitiveVarArgs() {
-		// IntelliJ IDEA 11 won't accept int assignment here
+		// IntelliJ IDEA 11 won't accept int assignment here id:109 gh:110
 		Integer sum = invokeMethod(component, "add", 1, 2, 3, 4);
 		assertEquals("add(1,2,3,4)", 10, sum.intValue());
 	}
 
 	@Test
 	public void invokeMethodWithPrimitiveVarArgsAsSingleArgument() {
-		// IntelliJ IDEA 11 won't accept int assignment here
+		// IntelliJ IDEA 11 won't accept int assignment here id:47 gh:48
 		Integer sum = invokeMethod(component, "add", new int[] { 1, 2, 3, 4 });
 		assertEquals("add(1,2,3,4)", 10, sum.intValue());
 	}

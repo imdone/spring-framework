@@ -128,7 +128,7 @@ public class ConcurrentReferenceHashMapTests {
 
 	@Test
 	public void shouldPutAndGet() throws Exception {
-		// NOTE we are using mock references so we don't need to worry about GC
+		// NOTE we are using mock references so we don't need to worry about GC id:72 gh:73
 		assertThat(this.map.size(), is(0));
 		this.map.put(123, "123");
 		assertThat(this.map.get(123), is("123"));

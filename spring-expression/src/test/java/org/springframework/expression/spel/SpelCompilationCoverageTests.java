@@ -56,7 +56,7 @@ import static org.junit.Assert.*;
 public class SpelCompilationCoverageTests extends AbstractExpressionTests {
 
 	/*
-	 * Further TODOs for compilation:
+	 * Further TODO s for compilation: id:105 gh:102
 	 *
 	 * - OpMinus with a single literal operand could be treated as a negative literal. Will save a
 	 *   pointless loading of 0 and then a subtract instruction in code gen.
@@ -953,7 +953,7 @@ public class SpelCompilationCoverageTests extends AbstractExpressionTests {
 		assertCanCompile(expression);
 		assertEquals("xyz", expression.getValue(context, new SomeCompareMethod2()).toString());
 
-		// TODO fails due to conversionservice handling of String[] to Object...
+		// TODO fails due to conversionservice handling of String[] to Object... id:43 gh:44
 		//	expression = parser.parseExpression("#append2(#stringArray)");
 		//	assertEquals("xyz", expression.getValue(context).toString());
 		//	assertTrue(((SpelNodeImpl)((SpelExpression) expression).getAST()).isCompilable());
@@ -3430,7 +3430,7 @@ public class SpelCompilationCoverageTests extends AbstractExpressionTests {
 		assertEquals("aaabbbccc", tc.s);
 		tc.reset();
 
-		// TODO Fails related to conversion service converting a String[] to satisfy Object...
+		// TODO Fails related to conversion service converting a String[] to satisfy Object... id:29 gh:30
 //		expression = parser.parseExpression("sixteen(stringArray)");
 //		assertCantCompile(expression);
 //		expression.getValue(tc);

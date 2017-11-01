@@ -221,7 +221,7 @@ public class FreeMarkerMacroTests {
 		assertEquals("<textarea id=\"name\" name=\"name\" rows=10 cols=30>\nDarren</textarea>", getMacroOutput("FORM4"));
 	}
 
-	// TODO verify remaining output (fix whitespace)
+	// TODO verify remaining output (fix whitespace) id:121 gh:122
 
 	@Test
 	public void testForm9() throws Exception {

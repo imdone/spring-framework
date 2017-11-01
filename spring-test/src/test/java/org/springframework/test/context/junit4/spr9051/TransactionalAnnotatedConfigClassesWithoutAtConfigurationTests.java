@@ -105,7 +105,7 @@ public class TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests exte
 
 	@Before
 	public void compareDataSources() throws Exception {
-		// NOTE: the two DataSource instances are NOT the same!
+		// NOTE: the two DataSource instances are NOT the same! id:92 gh:93
 		assertNotSame(dataSourceFromTxManager, dataSourceViaInjection);
 	}
 
@@ -122,7 +122,7 @@ public class TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests exte
 	public void afterTransaction() {
 		assertEquals("Deleting yoda", 1, deletePerson(YODA));
 
-		// NOTE: We would actually expect that there are now ZERO entries in the
+		// NOTE: We would actually expect that there are now ZERO entries in the id:108 gh:103
 		// person table, since the transaction is rolled back by the framework;
 		// however, since our JdbcTemplate and the transaction manager used by
 		// the Spring TestContext Framework use two different DataSource

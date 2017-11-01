@@ -121,7 +121,7 @@ class SpringExtensionTestCase {
 	}
 
 	/**
-	 * NOTE: Test code must be compiled with "-g" (debug symbols) or "-parameters" in order
+	 * NOTE: Test code must be compiled with "-g" (debug symbols) or "-parameters" in order id:76 gh:77
 	 * for the parameter name to be used as the qualifier; otherwise, use
 	 * {@code @Qualifier("wally")}.
 	 */

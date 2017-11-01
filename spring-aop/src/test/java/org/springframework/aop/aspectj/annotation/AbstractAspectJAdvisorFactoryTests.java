@@ -429,7 +429,7 @@ public abstract class AbstractAspectJAdvisorFactoryTests {
 	}
 	*/
 
-	// TODO: Why does this test fail? It hasn't been run before, so it maybe never actually passed...
+	// TODO: Why does this test fail? It hasn't been run before, so it maybe never actually passed... id:78 gh:79
 
 	@Test
 	@Ignore
@@ -491,7 +491,7 @@ public abstract class AbstractAspectJAdvisorFactoryTests {
 		}
 	}
 
-	// TODO document this behaviour.
+	// TODO document this behaviour. id:2 gh:3
 	// Is it different AspectJ behaviour, at least for checked exceptions?
 	@Test
 	public void testAspectMethodThrowsExceptionIllegalOnSignature() {

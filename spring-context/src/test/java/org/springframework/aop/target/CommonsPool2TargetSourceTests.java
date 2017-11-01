@@ -38,7 +38,7 @@ import static org.junit.Assert.*;
 
 /**
  * Tests for pooling invoker interceptor.
- * TODO: need to make these tests stronger: it's hard to
+ * TODO: need to make these tests stronger: it's hard to id:69 gh:70
  * make too many assumptions about a pool.
  *
  * @author Rod Johnson
@@ -102,7 +102,7 @@ public class CommonsPool2TargetSourceTests {
 		SideEffectBean pooled = (SideEffectBean) beanFactory.getBean("pooledWithMixin");
 		assertEquals(INITIAL_COUNT, pooled.getCount());
 		PoolingConfig conf = (PoolingConfig) beanFactory.getBean("pooledWithMixin");
-		// TODO one invocation from setup
+		// TODO one invocation from setup id:8 gh:9
 		//assertEquals(1, conf.getInvocations());
 		pooled.doWork();
 		//	assertEquals("No objects active", 0, conf.getActive());

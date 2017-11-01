@@ -52,7 +52,7 @@ public class DeclareParentsTests {
 		assertTrue("Introduction must have been made", testBeanProxy instanceof Lockable);
 	}
 
-	// TODO if you change type pattern from org.springframework.beans..*
+	// TODO if you change type pattern from org.springframework.beans..* id:68 gh:69
 	// to org.springframework..* it also matches introduction.
 	// Perhaps generated advisor bean definition could be made to depend
 	// on the introduction, in which case this would not be a problem.
